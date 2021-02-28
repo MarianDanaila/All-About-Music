@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Raleway", sans-serif;
+    background: #f7f7f7;
+  }
+  
+  .app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+    color: #407BFF;
+  }
+  header p {
+    font-size: 25px;
+    color: #407BFF;
+  }
+
+  .back-button {
+    display: flex;
+    justify-content: center;
+}
+
+.back-button button {
+    height: 4rem;
+    width: 14rem;
+    background: #407BFF;
+    color: #c4c4c2;
+    border-radius: 15rem;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: .5rem;
+    border: none;
+}
+
+.back-button button:hover {
+    background: #c4c4c2;
+    color: #407BFF;
+}
+  
+  .pads {
+    background: lightblue;
+    width: 100%;
+    display: flex;
+  }
+  .pads > div {
+    height: 100px;
+    width: 100px;
+    flex: 1;
+  }
+
+  .pad1 {
+    background: #bbdefb;
+  }
+  .pad2 {
+    background: #90caf9;
+  }
+  .pad3 {
+    background: #64b5f6;
+  }
+  .pad4 {
+    background: #42a5f5;
+  }
+  .pad5 {
+    background: #2196f3;
+  }
+  .pad6 {
+    background: #1e88e5;
+  }
+  .pad7 {
+    background: #1976d2;
+  }
+  .pad8 {
+    background: #1565c0;
+  }
+  .pad9 {
+    background: #0d47a1;
+  }
+  
+  .visual > div {
+    position: absolute;
+    bottom: 0%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: scale(1);
+    z-index: -1;
+  }
+  
+  @keyframes jump {
+    0% {
+      bottom: 0%;
+      left: 20%;
+    }
+    50% {
+      bottom: 50%;
+      left: 50%;
+    }
+  
+    100% {
+      bottom: 00%;
+      left: 80%;
+    }
+  }
+  
