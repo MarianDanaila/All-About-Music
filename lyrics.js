@@ -3,11 +3,11 @@ const search = document.getElementById('search');
 const result = document.getElementById('result');
 
 
-/// api URL ///
+// API URL //
 const apiURL = 'https://api.lyrics.ovh';
 
 
-/// adding event listener in form
+/// Adding event listener in form
 
 form.addEventListener('submit', e=> {
     e.preventDefault();
@@ -22,7 +22,8 @@ form.addEventListener('submit', e=> {
 })
 
 
-//search song 
+// Search song 
+
 async function searchSong(searchValue){
     const searchResult = await fetch(`${apiURL}/suggest/${searchValue}`);
     const data = await searchResult.json();
@@ -30,7 +31,8 @@ async function searchSong(searchValue){
     showData(data);
 }
 
-//display final result in DOM
+// Display final result in DOM
+
 function showData(data){
   
     result.innerHTML = `
@@ -51,11 +53,13 @@ function showData(data){
 
 
 
-//event listener in get lyrics button
+// Event listener in get lyrics button
+
 result.addEventListener('click', e=>{
     const clickedElement = e.target;
 
-    //checking clicked element is button or not
+    // Checking clicked element is button or not
+    
     if (clickedElement.tagName === 'SPAN'){
         const artist = clickedElement.getAttribute('data-artist');
         const songTitle = clickedElement.getAttribute('data-songtitle');
@@ -65,6 +69,7 @@ result.addEventListener('click', e=>{
 })
 
 // Get lyrics for song
+
 async function getLyrics(artist, songTitle) {
     const res = await fetch(`${apiURL}/v1/${artist}/${songTitle}`);
     const data = await res.json();

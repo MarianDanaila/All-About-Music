@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 header{
     margin: 50px;
     overflow: hidden;
-    background: linear-gradient(to right,#407BFF,rgba(64,123,255, .8)), url(/images/guitar.jpg);
+    background: linear-gradient(to right,#407BFF,rgba(64,123,255, .8)), url(/images/names.jpg);
     height: 80vh;
     border: none;
     background-repeat: no-repeat;

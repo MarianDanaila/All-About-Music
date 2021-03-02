@@ -50,7 +50,7 @@ randomSong.addEventListener("click",random);
 
 
 
-//functions
+// utility functions
 
 function fetchMusicDetail(){
     $("#image").attr("src",poster[playlist_index]);
