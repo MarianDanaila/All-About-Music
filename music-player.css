@@ -216,7 +216,7 @@ header h1 {
     background: var(--color-text);
     z-index: 3;
     outline: none;
-    position: fixed;
+    /*position: fixed;*/
     margin-left: 82px;
     margin-top: 10px;
 }
